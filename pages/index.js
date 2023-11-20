@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className={styles.container} style={{ backgroundColor: '#f8adc3', padding: 0 }}>
       <Head>
-        <title>Create Next App</title>
+        <title>Sathukudi's Birthday!</title>
         <link rel="icon" href="/animation-animated.gif" />
       </Head>
 
