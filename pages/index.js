@@ -46,8 +46,8 @@ export default function Home() {
           <div style={{ flex: 1, fontStyle: 'oblique', fontSize: 20 }}>
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
               <span style={{ color: 'salmon' }}>{countDown}</span>
-              <span style={{ marginBottom: 5 }}>
-                <img src="/cake-three.gif" alt="Vercel custom" style={{ height: 50 }} />
+              <span style={{ marginBottom: 25 }}>
+                <img src="/cake-three.gif" alt="Vercel custom" style={{ height: 120 }} />
               </span>
             </div>
           </div>
