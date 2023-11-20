@@ -39,7 +39,7 @@ export default function Home() {
     <div className={styles.container} style={{ backgroundColor: '#f8adc3', padding: 0 }}>
       <Head>
         <title>Sathukudi's Birthday!</title>
-        <link rel="icon" href="/animation-animated.gif" />
+        <link rel="icon" href="/sathukudi/animation-animated.gif" />
       </Head>
 
       <main style={{ width: '100%', display: 'flex' }}>
@@ -47,12 +47,12 @@ export default function Home() {
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
               <span style={{ color: 'salmon' }}>{countDown}</span>
               <span style={{ marginBottom: 5 }}>
-                <img src="/cake-three.gif" alt="Vercel custom" style={{ height: 50 }} />
+                <img src="/sathukudi/cake-three.gif" alt="Vercel custom" style={{ height: 50 }} />
               </span>
             </div>
           </div>
           <div style={{ flex: 1 }}>
-            <img src="/ranjita.gif" alt="Vercel custom" style={{ flex: 1, maxWidth: '100%' }} />
+            <img src="/sathukudi/ranjita.gif" alt="Vercel custom" style={{ flex: 1, maxWidth: '100%' }} />
           </div>
       </main>
 
