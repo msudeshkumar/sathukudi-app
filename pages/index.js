@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className={styles.container} style={{ backgroundColor: '#f8adc3', padding: 0 }}>
       <Head>
-        <title>Create Next App</title>
+        <title>Sathukudi's Birthday!</title>
         <link rel="icon" href="/animation-animated.gif" />
       </Head>
 
@@ -46,13 +46,13 @@ export default function Home() {
           <div style={{ flex: 1, fontStyle: 'oblique', fontSize: 20 }}>
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
               <span style={{ color: 'salmon' }}>{countDown}</span>
-              <span style={{ marginBottom: 5 }}>
-                <img src="/cake-three.gif" alt="Vercel" style={{ height: 50 }} />
+              <span style={{ marginBottom: 25 }}>
+                <img src="/cake-three.gif" alt="Vercel custom" style={{ height: 120 }} />
               </span>
             </div>
           </div>
           <div style={{ flex: 1 }}>
-            <img src="/ranjita.gif" alt="Vercel" style={{ flex: 1, maxWidth: '100%' }} />
+            <img src="/ranjita.gif" alt="Vercel custom" style={{ flex: 1, maxWidth: '100%' }} />
           </div>
       </main>
 
