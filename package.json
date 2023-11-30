@@ -7,6 +7,9 @@
     "start": "next start --port 3590"
   },
   "dependencies": {
+    "@fireworks-js/react": "^2.10.7",
+    "canvas-confetti": "^1.9.2",
+    "fireworks-js": "^2.10.7",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
