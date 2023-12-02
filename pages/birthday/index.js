@@ -7,13 +7,14 @@ import { redirect, useSearchParams } from 'next/navigation';
 
 export default function Birthday() {
     const ref = useRef(null)
+    setTimeout(() => {
+      console.log('ref.current', ref.current)
+      ref.current?.start()
+    }, 1000)
 
-    useEffect(() => {
-      setTimeout(() => {
-        ref.current?.start()
-      }, 1000)
+    /* useEffect(() => {
       window.location.reload();
-    });
+    }); */
 
     return (
     <div className={styles.container} style={{ backgroundColor: '#f8adc3', padding: 0 }}>
@@ -26,6 +27,7 @@ export default function Birthday() {
         <Fireworks
           ref={ref}
           options={{ opacity: 0.5 }}
+          autostart={false}
           style={{
             top: 0,
             left: 0,

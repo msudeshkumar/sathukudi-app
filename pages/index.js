@@ -21,7 +21,7 @@ export default function Home() {
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      if (distance < 0) {
+      if (distance <= 1000 || true) {
         clearInterval(x);
         window.location.replace('/birthday');
       } else if (distance <=30000) {
