@@ -7,10 +7,14 @@ import { redirect, useSearchParams } from 'next/navigation';
 
 export default function Birthday() {
     const ref = useRef(null)
-
-    useEffect(() => {
+    setTimeout(() => {
+      console.log('ref.current', ref.current)
       ref.current?.start()
-    });
+    }, 1000)
+
+    /* useEffect(() => {
+      window.location.reload();
+    }); */
 
     return (
     <div className={styles.container} style={{ backgroundColor: '#f8adc3', padding: 0 }}>
@@ -23,6 +27,7 @@ export default function Birthday() {
         <Fireworks
           ref={ref}
           options={{ opacity: 0.5 }}
+          autostart={false}
           style={{
             top: 0,
             left: 0,
@@ -33,7 +38,7 @@ export default function Birthday() {
         }}
         />
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: 25, fontWeight: 800, color: 'salmon', fontStyle: 'oblique', fontWeight: 700 }}>
-            <span style={{ color: 'salmon' }}>Happy Birthday Sathukudi!</span>
+            <span style={{ color: 'salmon' }}>Happy Birthday Sathukudi!!</span>
               <span style={{ marginBottom: 25, marginLeft: 10, zIndex: 10000001 }} onClick={() => {
                 console.log('onMouseUp');
                 window.location.replace('/sathukudi');
