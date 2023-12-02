@@ -10,7 +10,7 @@ export default function Home() {
   const [finalCountDown, setFinalCountDown] = useState(null)
   const ref = useRef(null)
   const searchParams = useSearchParams()
-  const countDownDate = new Date("Dec 2, 2023 22:52:00").getTime();
+  const countDownDate = new Date("Dec 2, 2023 23:17:00").getTime();
 
   const x = () => {
     setInterval(() => {
@@ -21,7 +21,7 @@ export default function Home() {
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      if (distance <= 1000 || true) {
+      if (distance <= 1000) {
         clearInterval(x);
         window.location.replace('/birthday');
       } else if (distance <=30000) {
