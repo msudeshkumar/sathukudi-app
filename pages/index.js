@@ -10,7 +10,7 @@ export default function Home() {
   const [finalCountDown, setFinalCountDown] = useState(null)
   const ref = useRef(null)
   const searchParams = useSearchParams()
-  const countDownDate = new Date("Dec 2, 2023 23:17:00").getTime();
+  const countDownDate = new Date("Dec 3, 2023 23:57:00").getTime();
 
   const x = () => {
     setInterval(() => {
@@ -38,7 +38,6 @@ export default function Home() {
   const sos = () => {
     console.log('sos!');
     window.open('https://zomato.com/robertsonpet/robertsonpet-locality-restaurants?dishv2_id=14735&category=1')
-    // window.open('https:///www.zomato.com/chennai/delivery-in-thuraipakkam?dishv2_id=14735')
   }
 
   const renderTime = ({ remainingTime }) => {
@@ -55,7 +54,6 @@ export default function Home() {
       isNewTimeFirstTick.current = false;
     }
   
-    // force one last re-render when the time is over to tirgger the last animation
     if (remainingTime === 0) {
       setTimeout(() => {
         setOneLastRerender((val) => val + 1);
