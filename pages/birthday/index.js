@@ -33,7 +33,7 @@ export default function Birthday() {
         }}
         />
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: 25, fontWeight: 800, color: 'salmon', fontStyle: 'oblique', fontWeight: 700 }}>
-            <span style={{ color: 'salmon' }}>Happy Birthday Sathukudi!</span>
+            <span style={{ color: 'salmon' }}>Happy Birthday Sathukudi!!</span>
               <span style={{ marginBottom: 25, marginLeft: 10, zIndex: 10000001 }} onClick={() => {
                 console.log('onMouseUp');
                 window.location.replace('/sathukudi');
