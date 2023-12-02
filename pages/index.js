@@ -80,9 +80,9 @@ export default function Home() {
     );
   };
 
-  useEffect(() => {
-    x();
-  });
+  // useEffect(() => {
+  //   x();
+  // });
 
   return (
     <div className={styles.container} style={{ backgroundColor: '#f8adc3', padding: 0 }}>
@@ -121,7 +121,7 @@ export default function Home() {
               <div style={{ flex: 1 }}>
                 <img src="/ranjita.gif" alt="Vercel custom" style={{ flex: 1, maxWidth: '100%' }} />
               </div>
-              {Date.now() > new Date("Dec 3, 2023 00:00:00") ? <button style={{ position: 'absolute', width: 50, height: 50, bottom: 20, right: 20, borderRadius: 60, backgroundColor: 'red', color: 'white', fontWeight: 'bolder' }} onTouchStart={sos}>SOS</button> : null}
+              {Date.now() > new Date("Dec 2, 2023 23:59:00") ? <button style={{ position: 'absolute', width: 50, height: 50, bottom: 20, right: 20, borderRadius: 60, backgroundColor: 'red', color: 'white', fontWeight: 'bolder' }} onTouchStart={sos}>SOS</button> : null}
             </>
           )}
       </main>
