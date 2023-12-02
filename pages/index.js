@@ -10,7 +10,7 @@ export default function Home() {
   const [finalCountDown, setFinalCountDown] = useState(null)
   const ref = useRef(null)
   const searchParams = useSearchParams()
-  const countDownDate = new Date("Dec 2, 2023 22:30:00").getTime();
+  const countDownDate = new Date("Dec 2, 2023 22:37:00").getTime();
 
   const x = () => {
     setInterval(() => {
