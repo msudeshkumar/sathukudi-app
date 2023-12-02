@@ -9,7 +9,9 @@ export default function Birthday() {
     const ref = useRef(null)
 
     useEffect(() => {
-      ref.current?.start()
+      setTimeout(() => {
+        ref.current?.start()
+      }, 2000)
     });
 
     return (
