@@ -11,6 +11,7 @@ export default function Home() {
   const ref = useRef(null)
   const searchParams = useSearchParams()
   const countDownDate = new Date("Dec 2, 2023 23:57:00").getTime();
+  const url = useState('https://zomato.com/robertsonpet/robertsonpet-locality-restaurants?dishv2_id=14735&category=1');
 
   const x = () => {
     setInterval(() => {
@@ -37,7 +38,8 @@ export default function Home() {
 
   const sos = () => {
     console.log('sos!');
-    window.open('https://zomato.com/robertsonpet/robertsonpet-locality-restaurants?dishv2_id=14735&category=1')
+    // window.location.replace('https://zomato.com/robertsonpet/robertsonpet-locality-restaurants?dishv2_id=14735&category=1')
+    window.open('https://zomato.com/robertsonpet/robertsonpet-locality-restaurants?dishv2_id=14735&category=1', '_blank')
   }
 
   const renderTime = ({ remainingTime }) => {
@@ -121,7 +123,9 @@ export default function Home() {
               <div style={{ flex: 1 }}>
                 <img src="/ranjita.gif" alt="Vercel custom" style={{ flex: 1, maxWidth: '100%' }} />
               </div>
-              {Date.now() > new Date("Dec 2, 2023 23:59:00") ? <button style={{ position: 'absolute', width: 50, height: 50, bottom: 20, right: 20, borderRadius: 60, backgroundColor: 'red', color: 'white', fontWeight: 'bolder' }} onTouchStart={sos}>SOS</button> : null}
+              {Date.now() > new Date("Dec 2, 2023 23:59:00") ? <button style={{ position: 'absolute', width: 50, height: 50, bottom: 20, right: 20, borderRadius: 60, backgroundColor: 'red', color: 'white', fontWeight: 'bolder' }} onClick={sos}>
+                SOS
+              </button> : null}
             </>
           )}
       </main>
